@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhuCoreAPI", "PhuCoreAPI.csproj", "{D3DB0F05-34C7-45FA-8D8B-A0284989AC69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3DB0F05-34C7-45FA-8D8B-A0284989AC69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3DB0F05-34C7-45FA-8D8B-A0284989AC69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3DB0F05-34C7-45FA-8D8B-A0284989AC69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3DB0F05-34C7-45FA-8D8B-A0284989AC69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14EFE442-67EF-4C72-9EE3-2E95651BA21C}
+	EndGlobalSection
+EndGlobal
