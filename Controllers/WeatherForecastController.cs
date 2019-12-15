@@ -26,6 +26,7 @@ namespace PhuCoreAPI.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            List<string> test1 = new List<string>();
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {

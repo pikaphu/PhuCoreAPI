@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  phucoreapi:
+    image: ${DOCKER_REGISTRY-}phu-core-api
+    container_name: phu-api-dotnetcore
+    build:
+      context: .
+      dockerfile: Dockerfile
