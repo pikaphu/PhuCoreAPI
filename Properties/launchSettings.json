@@ -17,14 +17,33 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "PhuCoreAPI": {
+    "PhuCoreAPI-local": {
       "commandName": "Project",
+      "commandLineArgs": "watch run",
       "launchBrowser": true,
-      "launchUrl": "weatherforecast",
+      "launchUrl": "",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "applicationUrl": "http://localhost:5000"
+    },
+    "PhuCoreAPI-Dev": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://0.0.0.0:5000"
+    },
+    "PhuCoreAPI-Prod": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production"
+      },
+      "applicationUrl": "http://0.0.0.0:5000"
     },
     "Docker": {
       "commandName": "Docker",

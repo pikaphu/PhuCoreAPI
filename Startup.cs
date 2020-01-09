@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -25,6 +26,8 @@ namespace PhuCoreAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddHealthChecks();
+            // services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +45,10 @@ namespace PhuCoreAPI
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+
+                // endpoints.MapRazorPages();
+                endpoints.MapGet("/", context => context.Response.WriteAsync("Hello world"));
+                endpoints.MapHealthChecks("/healthz");
             });
         }
     }
